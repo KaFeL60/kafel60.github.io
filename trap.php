@@ -11,6 +11,7 @@ body {
   color:white;
 }
 </style>
+    <a href=kod.php>
 </head>
 <body>
     <center><big><big><big>
@@ -21,24 +22,6 @@ body {
         height:<input type=number name=h><br>
         <input type=submit value=oblicz name=oblicz><br>
 </form>
-<?php
 
-if(isset($_POST['oblicz'])){
-    $a=$_POST['a'];
-    $b=$_POST['b'];
-    $h=$_POST['h'];
-    if($a<=0 || $b<=0 || $h<=0)
-    {
-        echo "podaj wszystkie prawidłowe wartości";
-        return;
-    }
-    else{
-        
-    }
-
-    $pole=(($a+$b)*$h)/2;
-        echo $pole;
-}
-?>
 </body>
 </html>
